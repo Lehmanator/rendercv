@@ -16,7 +16,7 @@
 # To build RenderCV, we need to specify which build package we want to use. There are
 # many build packages like `setuptools`, `flit`, `poetry`, `hatchling`, etc. We will use
 # `hatchling`.
-requires = ["hatchling==1.21.1"] # Our dependency to build RenderCV
+requires = ['hatchling~=1.21.1'] # Our dependency to build RenderCV
 
 # Python has a standard object format called build-backend object. Python standard asks
 # this object to have some specific methods that do a specific job. For example, it
@@ -49,7 +49,7 @@ name = 'rendercv'
 description = 'LaTeX CV generator engine from a YAML input file'
 dynamic = [
     "version",
-] # We will use hatchling to generate the version number                                         
+] # We will use hatchling to generate the version number
 authors = [{ name = 'Sina Atalay' }]
 requires-python = '>=3.10'
 readme = "README.md"
